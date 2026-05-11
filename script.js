@@ -41,6 +41,36 @@ const properties = [
 },
 
 {
+    image: "images/House-in-Kira-Bulindo-for-Sale-850x570.jpeg",
+    title: "4 Bedroom House for Sale in Kira Bulindo",
+    category: "For Sale",
+    usage: "Residential",
+    type: "House",
+    location: "Kira",
+    price: 780000000
+},
+
+{
+    image: "images/Munyonyo-kigo-house.jpeg",
+    title: "New 4 Bedroom House for Sale in Munyonyo Kigo",
+    category: "For Sale",
+    usage: "Residential",
+    type: "House",
+    location: "Munyonyo",
+    price: 650000000
+},
+
+{
+    image: "images/Bwebajja-house.jpg",
+    title: "4 Bedroom House for Sale in Bwebajja, Entebbe",
+    category: "For Sale",
+    usage: "Residential",
+    type: "House",
+    location: "Bwebajja",
+    price: 820000000
+},
+
+{
     image: "images/Bunga.webp",
     title: "5 bedroom house for sale in Bunga, Kampala",
     category: "For Sale",
@@ -139,6 +169,17 @@ const properties = [
     location: "Bunga",
     price: 350000000
 },
+
+{
+    image: "images/House-for-sale-in-Bunga-Kampala-Uganda-2.jpg",
+    title: "Luxurious 5 Bedroom Mansion for Sale in Bunga Kampala",
+    category: "For Sale",
+    usage: "Residential",
+    type: "House",
+    location: "Bunga",
+    price: 2300000000
+},
+
 ];
 
 function displayProperties(data) {
