@@ -175,7 +175,7 @@ body {
 }
 
 .about-text {
-    max-width: 800px;
+    max-width: none;
 }
 
 .about-text h2 {
