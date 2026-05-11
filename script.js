@@ -51,63 +51,63 @@ const properties = [
 },
 
 {
-    image: "images/Homepage-image.jpg",
-    title: "5 Bedroom Mansion for Sale in Bunga Kampala",
+    image: "images/land-bwebajja.jpeg",
+    title: "60 Decimals Lake View Plot Of Land For Sale In Bwebajja Dundu Entebbe Road",
     category: "For Sale",
     usage: "Residential",
-    type: "House",
-    location: "Bunga",
-    price: 2190000000
+    type: "Land",
+    location: "Bwebajja",
+    price: 550000000
 },
 
 {
-    image: "images/Homepage-image.jpg",
-    title: "5 Bedroom Mansion for Sale in Bunga Kampala",
-    category: "For Sale",
+    image: "images/kololo-rental.jpeg",
+    title: "2 Bedrooms Furnished Apartments For Rent In Kololo Kampala",
+    category: "For Rent",
     usage: "Residential",
-    type: "House",
-    location: "Bunga",
-    price: 2190000000
+    type: "Apartment",
+    location: "Kololo",
+    price: 5200000
 },
 
 {
-    image: "images/Homepage-image.jpg",
-    title: "5 Bedroom Mansion for Sale in Bunga Kampala",
-    category: "For Sale",
+    image: "images/standalone.jpeg",
+    title: "4 Bedrooms Standalone House For Rent In Lubowa",
+    category: "For Rent",
     usage: "Residential",
     type: "House",
-    location: "Bunga",
-    price: 2190000000
+    location: "Lubowa",
+    price: 5000000
 },
 
 {
-    image: "images/Homepage-image.jpg",
-    title: "5 Bedroom Mansion for Sale in Bunga Kampala",
-    category: "For Sale",
+    image: "images/munyonyohouse.jpg",
+    title: "5 Bedrooms House For Rent In Munyonyo On Quarter An Acre",
+    category: "For Rent",
     usage: "Residential",
     type: "House",
-    location: "Bunga",
-    price: 2190000000
+    location: "Munyonyo",
+    price: 7400000
 },
 
 {
-    image: "images/Homepage-image.jpg",
-    title: "5 Bedroom Mansion for Sale in Bunga Kampala",
+    image: "images/land-kira.jpeg",
+    title: "2 Plots Of 25 Decimals Each For Sale In Kira Parliamentary SACCO",
     category: "For Sale",
     usage: "Residential",
-    type: "House",
-    location: "Bunga",
-    price: 2190000000
+    type: "Land",
+    location: "Kira",
+    price: 185000000
 },
 
 {
-    image: "images/Homepage-image.jpg",
-    title: "5 Bedroom Mansion for Sale in Bunga Kampala",
+    image: "images/landinbunga.jpeg",
+    title: "12 Decimals Plot Of Land For Sale In Bunga Kawuku",
     category: "For Sale",
     usage: "Residential",
-    type: "House",
+    type: "Land",
     location: "Bunga",
-    price: 2190000000
+    price: 350000000
 },
 ];
 
