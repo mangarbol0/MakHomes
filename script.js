@@ -21,6 +21,16 @@ const properties = [
 },
 
 {
+    image: "images/3 bedrooms in Akright.jpeg",
+    title: "Three Bedrooms furnished Apartments For Rent Akright City",
+    category: "For Rent",
+    usage: "Residential",
+    type: "Apartment",
+    location: "Akright",
+    price: 6700000
+},
+
+{
     image: "images/kololo-steam.jpeg",
     title: "3 Bedroom Apartment for Sale in Kololo, Kampala Pool, Gym, Steam & Sauna",
     category: "For Sale",
