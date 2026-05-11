@@ -61,12 +61,16 @@ body {
 }
 
 .hero-image {
-    width: 1000px;
+    width: 100px;
     object-fit: cover;
     margin: none;
     margin-top: 5px;
     margin: none;
     margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    min-width: 180vh;
 }
 
 .explore-button {
