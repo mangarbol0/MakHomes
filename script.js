@@ -137,7 +137,7 @@ const properties = [
     usage: "Residential",
     type: "Land",
     location: "Bweya",
-    price: 600000000
+    price: 450000000
 },
 
 {
@@ -222,75 +222,61 @@ const properties = [
 
 ];
 
-function displayProperties(data) {
+//DISPLAY PROPERTIES
+    function displayProperties(data) {
+        const container =
+        document.getElementById("propertyContainer");
+        container.innerHTML = "";
+        if(data.length === 0) {
+            container.innerHTML = "<p>No properties found.</p>";
+            return;
+        }
 
-const container =
-document.getElementById("propertyContainer");
+        data.forEach(property => {
+            container.innerHTML += `
+            <div class="card">
+                <img src="${property.image}">
+                <div class="card-info">
+                    <h3>${property.title}</h3>
+                        <p>${property.category}</p>
+                        <p>${property.usage}</p>
+                        <p>${property.type}</p>
+                        <p>${property.location}</p>
+                    <h4>UGX ${property.price.toLocaleString()}</h4>
+                </div>
+            </div>
+            `;
+        });
+    }
 
-container.innerHTML = "";
-
-data.forEach(property => {
-
-container.innerHTML += `
-
-<div class="card">
-
-<img src="${property.image}">
-
-<div class="card-info">
-
-<h3>${property.title}</h3>
-
-<p>${property.category}</p>
-
-<p>${property.usage}</p>
-
-<p>${property.type}</p>
-
-<p>${property.location}</p>
-
-<h4>UGX ${property.price.toLocaleString()}</h4>
-</div>
-</div>
-`;
-});
-}
-
+// FILTER FUNCTION
 function filterProperties() {
+    const category = document.getElementById("categoryFilter").value;
+    const usage = document.getElementById("usageFilter").value;
+    const type = document.getElementById("typeFilter").value;
+    const location = document.getElementById("locationFilter").value;
+    const price = document.getElementById("priceFilter").value;
+    const filtered = properties.filter(property => {
 
-const category =
-document.getElementById("categoryFilter").value;
+    return (
+        (category === "All" || property.category === category) &&
+        (usage === "All" || property.usage === usage) &&
+        (type === "All" || property.type === type) &&
+        (location === "All" || property.location === location) &&
+        (
+            price === "All" ||
+            (price === "100000000" && property.price < 10000000) ||
+            (price === "300000000" && property.price >= 100000000 && property.price <= 300000000) ||
+            (price === "500000000" && property.price >= 300000000 && property.price <= 500000000) ||
+            (price === "1000000000" && property.price > 500000000)
+        )
+        );
 
-const usage =
-document.getElementById("usageFilter").value;
+    });
 
-const type =
-document.getElementById("typeFilter").value;
+    displayProperties(filtered);
 
-const location =
-document.getElementById("locationFilter").value;
-
-const filtered =
-properties.filter(property => {
-
-return (
-
-(category === "All" ||
-property.category === category)
-&&
-
-(usage === "All" ||
-property.usage === usage)
-&&
-
-(type === "All" ||
-property.type === type)
-&&
-
-(location === "All" ||
-property.location === location)
-);
-});
-displayProperties(filtered);
 }
+
+// LOAD ALL PROPERTIES
 displayProperties(properties);
