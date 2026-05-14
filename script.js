@@ -67,8 +67,19 @@ const properties = [
     usage: "Commercial",
     type: "House",
     location: "Munyonyo",
-    price: 55000000
+    price: 5500000
 },
+
+{
+    image: "images/villakira.webp",
+    title: "Furnished 4bdrm Villa in Kira for Sale",
+    category: "For Sale",
+    usage: "Residential",
+    type: "Villa",
+    location: "Kira",
+    price: 179700000
+},
+
 
 {
     image: "images/kololo-steam.jpeg",
@@ -78,6 +89,16 @@ const properties = [
     type: "Apartment",
     location: "Kololo",
     price: 1501500000
+},
+
+{
+    image: "images/hotelinkigolubowa.webp",
+    title: "Hotel for Sale on 3acres of Land in Kigo/Lubowa With Lake View",
+    category: "For Sale",
+    usage: "Commercial",
+    type: "Hotel",
+    location: "Lubowa",
+    price: 5400000000
 },
 
 {
@@ -128,6 +149,16 @@ const properties = [
     type: "Apartment",
     location: "Kira",
     price: 6500000
+},
+
+{
+    image: "images/bungaoffice.webp",
+    title: "Commercial building for offices on Sale in Bunga, Kampala",
+    category: "For Sale",
+    usage: "Commercial",
+    type: "Office",
+    location: "Bunga",
+    price: 1450000000
 },
 
 {
@@ -208,6 +239,16 @@ const properties = [
     type: "Land",
     location: "Bunga",
     price: 350000000
+},
+
+{
+    image: "images/bungalowinkira.webp",
+    title: "Furnished 4bdrm Bungalow in Kira for sale",
+    category: "For Sale",
+    usage: "Residential",
+    type: "Bungalow",
+    location: "Kira",
+    price: 398500000
 },
 
 {
