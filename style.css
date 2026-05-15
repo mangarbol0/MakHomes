@@ -150,35 +150,31 @@ body {
 
 .explore-button {
     margin-right: 15px;
-    padding: 12px 25px;
+    padding: 16px 35px;
+    font-size: 16px;
     display: inline-block;
     background-color: var(--cream);
     color: var(--charcoal);
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
-    margin-top: 70px;
-}
-
-.listyour-button {
-    background-color: var(--charcoal);
-    padding: 12px 25px;
-    color: var(--white);
-    cursor: pointer;
-    border-radius: 20px;
-    border: 1px solid var(--charcoal);
-    margin-top: 170px;
+    transition: 0.3s ease;
+    margin-top: 100px;
+    border-color: var(--taupe);
+    border: 2px solid var(--taupe);
 }
 
 .explore-button:hover {
-    background-color: transparent;
+    background-color: var(--taupe);
     color: var(--white);
     transition: 0.3s;
+    border: 2px solid var(--cream);
+    transform: translateY(-3px);
 }
-.listyour-button:hover {
-    background-color: var(--cream);
-    color: var(--black);
-    transition: 0.3s;
+
+/* HIDE PROPERTIES SECTION */
+.hidden {
+    display: none;
 }
 
 /* RESPONSIVE */
@@ -269,14 +265,18 @@ body {
 /* INQUIRY SECTION */
 .inquiry-section {
     background: var(--taupe);
-    padding: 80px 60px;
+    padding: 178px 30px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .inquiry-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .inquiry-text h2 {
@@ -299,11 +299,14 @@ body {
 /* FORM */
 .inquiry-form {
     background: var(--cream);
-    padding: 170px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 100px 30px 10px 30px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .inquiry-form input,
@@ -346,19 +349,14 @@ body {
     }
 
     .inquiry-form {
-        padding: 50px 20px;
+        padding: 40px 20px;
     }
 }
 
-@media(max-width: 992px) {
-    .inquiry-form input,
-    .inquiry-form select,
-    .inquiry-form textarea {
-        padding: 15px;
-    }
-    .inquiry-form button {
-        width: 100%;
-        align-items: center;
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .inquiry-form {
+        padding: 40px 20px;
     }
 }
 
@@ -431,12 +429,12 @@ body {
     margin-bottom: 12px;
     text-align: center;
     color: var(--charcoal);
+    font-size: 40px;
 }
 
 .about-text p {
     color: var(--cream);
     background: var(--charcoal);
-    letter-spacing: 1.5px;
     padding: 30px;
     border-radius: 20px;
     flex: 1;
@@ -638,6 +636,6 @@ footer {
 @media(max-width: 900px) {
     .footer-mak {
         flex-direction: flex-column;
-        gap: 40px;
+        gap: 50px;
     }
 }
